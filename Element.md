@@ -112,7 +112,7 @@ s.alert.click(["取消", "cancel"]) # 点击出现的列表中的某个选项
 
 ### 监控到Alert出现后进行操作  
 with c.alert.watch_and_click(['好', '确定']):  
-	s(label="Settings").click() #   
+	s(label="Settings").click()
 
 ## 滑动swipe
 ### 根据像素坐标滑动
