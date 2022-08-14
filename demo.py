@@ -12,10 +12,17 @@ wda.DEBUG = False # default False
 wda.HTTP_TIMEOUT = 180.0 # default 180 seconds
 wda.DEVICE_WAIT_TIMEOUT = 180.0
 
-c = wda.Client("http://localhost:8100")
-#uuid="00008030-000614200233402E"
+#uuid="58dad54ccf463a7cf3752365408d766808f40ffd"
+#port=8100
+#c = wda.Client("http://localhost:8100")
 #c = wda.USBClient(uuid, port=8100) # 指定设备 udid 和WDA 端口号
 #c = wda.USBClient(uuid, port=8100) # 指定设备 udid 和WDA 端口号
+#wda_bundle_id="com.facebook.WebDriverAgentRunner.xctrunner"
+#c = wda.USBClient(uuid, port=port, wda_bundle_id=wda_bundle_id)
+uuid = "58dad54ccf463a7cf3752365408d766808f40ffd"
+port = 8100
+wda_bundle_id = "com.facebook.WebDriverAgentRunner.xctrunner"
+c = wda.USBClient(uuid, port=port, wda_bundle_id=wda_bundle_id)
 
 curStatus = c.status()
 print("curStatus=%s" % curStatus)
