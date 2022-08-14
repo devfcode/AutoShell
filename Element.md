@@ -97,9 +97,9 @@ s(name="屏幕使用时间").wait_gone(timeout=3.0) # 等待元素消失
 
 ## Alert操作  
 ### 对Alert弹框进行处理  
->>> print(s.alert.exists) # 判断是否存在   
+print(s.alert.exists) # 判断是否存在   
 True  
->>> print(s.alert.text) # 获取弹框信息  
+print(s.alert.text) # 获取弹框信息  
 移除“设置”？  
 “从主屏幕移除”会将App保留在App资源库中。  
 
