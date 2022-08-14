@@ -12,10 +12,10 @@ wda.DEBUG = False # default False
 wda.HTTP_TIMEOUT = 180.0 # default 180 seconds
 wda.DEVICE_WAIT_TIMEOUT = 180.0
 
-uuid="00008030-000614200233402E"
-#c = wda.USBClient("00008030-000614200233402E", port=8200) # 指定设备 udid 和WDA 端口号
-# c = wda.USBClient("9a74558f8e341d056731d9c8aa532107c48cb65c", port=8100) # 指定设备 udid 和WDA 端口号
-c = wda.Client("http://localhost:8200")
+c = wda.Client("http://localhost:8100")
+#uuid="00008030-000614200233402E"
+#c = wda.USBClient(uuid, port=8100) # 指定设备 udid 和WDA 端口号
+#c = wda.USBClient(uuid, port=8100) # 指定设备 udid 和WDA 端口号
 
 curStatus = c.status()
 print("curStatus=%s" % curStatus)
