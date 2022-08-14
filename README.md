@@ -20,8 +20,8 @@ pip3 install -U facebook-wda
 以后这个 WebDriverAgent.ipa 直接装在手机上,就不用每次运行 Xcode了
 
 ## 5. tidevice 启动 WebDriverAgent.ipa 并设置 端口转发
-tidevice xctest -B com.facebook.WebDriverAgentRunner.xctrunner -e USE_PORT:8100 --debug
-tidevice relay 8100 8100
+tidevice xctest -B com.facebook.WebDriverAgentRunner.xctrunner -e USE_PORT:8100 --debug   
+tidevice relay 8100 8100. 
 
 ## 6. 运行自己的 python 自动化脚本
 ./your_shell.py
